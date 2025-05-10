@@ -1,3 +1,6 @@
+
+// _____________8-08-2025 starts______________
+
 // program 1
 // 1. Write a script to greet your website visitor using JS alert box.
 alert("Welcome to script.js!");
@@ -79,18 +82,18 @@ console.log("I am " + age + " Years Old.");
 var birthYear = 2006;
 document.write(
   "My birth year is " +
-    birthYear +
-    "<br />" +
-    "Data type of my declared variable is " +
-    typeof birthYear
+  birthYear +
+  "<br />" +
+  "Data type of my declared variable is " +
+  typeof birthYear
 );
 
 console.log(
   "My birth year is " +
-    birthYear +
-    "\n" +
-    "Data type of my declared variable is " +
-    typeof birthYear
+  birthYear +
+  "\n" +
+  "Data type of my declared variable is " +
+  typeof birthYear
 );
 
 // 5. Write a script to display the following console using one JS variable:
@@ -107,14 +110,14 @@ fortuneTeller = {
 };
 console.log(
   "You will be " +
-    fortuneTeller.jobTitle +
-    " in " +
-    fortuneTeller.geographicLocation +
-    " and married to " +
-    fortuneTeller.partnersName +
-    " with " +
-    fortuneTeller.numberOfChildren +
-    " kids."
+  fortuneTeller.jobTitle +
+  " in " +
+  fortuneTeller.geographicLocation +
+  " and married to " +
+  fortuneTeller.partnersName +
+  " with " +
+  fortuneTeller.numberOfChildren +
+  " kids."
 );
 
 // 7. Declare a variable called email & assign to it a string that represents your Email Address (e.g. abc@xyz.com).
@@ -128,3 +131,17 @@ alert("My email address is " + email);
 // way to learn JavaScript”. Display the following message in an alert box:
 var book = "A smarter way to learn JavaScript";
 alert("I am trying to learn from the Book " + book);
+
+// _____________8-05-2025 ends______________
+
+
+// _____________10-05-2025 starts______________
+
+
+
+
+
+
+
+
+// _____________10-05-2025 starts______________
