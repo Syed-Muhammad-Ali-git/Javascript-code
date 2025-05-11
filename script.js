@@ -1,5 +1,5 @@
 
-// _____________8-08-2025 starts______________
+// ______________________________________8-08-2025 starts___________________________________
 
 // chapter 01 = Alerts____________
 
@@ -146,10 +146,10 @@ alert("My email address is " + email);
 var book = "A smarter way to learn JavaScript";
 alert("I am trying to learn from the Book " + book);
 
-// _____________8-05-2025 ends______________
+// ________________________________________8-05-2025 ends_______________________________________
 
 
-// _____________10-05-2025 starts______________
+// _______________________________10-05-2025 starts_______________________________________________
 
 // chapter 05 = Familiar operators_______________
 
@@ -240,5 +240,62 @@ console.log(b); // 24
 var totalCost = 1 + 3 * 4;
 console.log(totalCost); // 13
 
+var result = 10 - 4 + 2;
+console.log(result); // 8
 
-// _____________10-05-2025 starts______________
+var result = 18 / 3 + 2;
+console.log(result); // 8
+
+
+// ________________________________________10-05-2025 ends_______________________________________________
+
+
+// ________________________________________11-05-2025 ends_______________________________________________
+
+
+
+// chapter 08 = Concatenation of strings_______________
+
+// Using the plus operator, the code combines—concatenates—three elements into the
+// message: the string "Thanks, " plus the string represented by the variable userName plus the string "!"
+
+var userName1 = "Ali";
+alert("Thanks, " + userName1 + "!");
+
+// ...JavaScript automatically converts the numbers to strings, and displays the message "2
+// plus 2 equals 22".
+
+alert("2 plus 2 equals " + 2 + 2); // 22
+
+// how to make a string to number example here like this we add a parenthesis brackets to define the javascript
+// 2 + 2 = 4 this is a calculation or this is a "number" data type
+
+alert("2 plus 2 equals " + (2 + 2)); // 4
+
+
+// chapter 09 = Prompt___________________
+
+// Prompt code is like alert code but in prompt code we can take input from the user because prompt give a  message and input box in web page but alert only show a message
+
+
+// in this promt prompt("Your species?", "human"); you species is the message and human show in the input box 
+// but if the user
+
+// program 1
+
+var spec = prompt("Your species?", "human");
+console.log(spec);
+
+// we also use this type of prompt in web page 
+
+// program 2
+
+prompt("7 + 3");
+
+// program 3
+
+var name6 = prompt("what is your name?");
+console.log(name6);
+// you can also use console to print the value given by user in prompt input
+
+// _____________________________________11-05-2025 ends____________________________________________
