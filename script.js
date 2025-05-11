@@ -93,6 +93,7 @@ console.log("I am " + age + " Years Old.");
 
 // Declare a variable called birthYear & assign to it your birth year.
 // Show the following message in your browser
+
 var birthYear = 2006;
 document.write(
   "My birth year is " +
@@ -111,11 +112,13 @@ console.log(
 );
 
 // 5. Write a script to display the following console using one JS variable:
-var pizza = "pizza";
+
+var pizza = " pizza" + "\n pizz" + "\n piz" + "\n pi" + "\n p";
 console.log(pizza);
 
 // 6. Fortune Teller: Store the following into variables: number of
 // children, partner’s name, geographic location, and job title.
+
 fortuneTeller = {
   numberOfChildren: 2,
   partnersName: "ABC",
@@ -137,12 +140,14 @@ console.log(
 // 7. Declare a variable called email & assign to it a string that represents your Email Address (e.g. abc@xyz.com).
 // Show the below mentioned message in an alert box and console.
 // (Hint: use string concatenation)
+
 var email = "syeadmuhammedalimazhar@gmail.com";
 console.log("My email address is " + email);
 alert("My email address is " + email);
 
 // 8. Declare a variable called book & give it the value “A smarter
 // way to learn JavaScript”. Display the following message in an alert box:
+
 var book = "A smarter way to learn JavaScript";
 alert("I am trying to learn from the Book " + book);
 
@@ -155,6 +160,7 @@ alert("I am trying to learn from the Book " + book);
 
 // alerts are automatically add and subtract
 // program 1   
+
 alert(2 + 2);
 alert(4 - 2);
 
