@@ -1,7 +1,7 @@
 
 // ______________________________________8-08-2025 starts___________________________________
 
-// chapter 01 = Alerts____________
+// chapter 01 = Alerts ____________
 
 // program 1
 // 1. Write a script to greet your website visitor using JS alert box.
@@ -48,7 +48,7 @@ var message = "Hello World";
 alert(message);
 
 
-//  chapter 3 = variable for numbers____________
+//  chapter 3 = variable for numbers ____________
 
 var age = 19;
 console.log(age);
@@ -156,7 +156,7 @@ alert("I am trying to learn from the Book " + book);
 
 // _______________________________10-05-2025 starts_______________________________________________
 
-// chapter 05 = Familiar operators_______________
+// chapter 05 = Familiar operators _______________
 
 // alerts are automatically add and subtract
 // program 1   
@@ -171,7 +171,7 @@ var popularNumber = num + anotherNum;
 console.log(popularNumber); //11
 
 
-// chapter 06 = Unfamiliar operators_______________
+// chapter 06 = Unfamiliar operators _______________
 
 // program 1
 // num = 2
@@ -260,7 +260,7 @@ console.log(result); // 8
 
 
 
-// chapter 08 = Concatenation of strings_______________
+// chapter 08 = Concatenation of strings _______________
 
 // Using the plus operator, the code combines—concatenates—three elements into the
 // message: the string "Thanks, " plus the string represented by the variable userName plus the string "!"
@@ -279,7 +279,7 @@ alert("2 plus 2 equals " + 2 + 2); // 22
 alert("2 plus 2 equals " + (2 + 2)); // 4
 
 
-// chapter 09 = Prompt___________________
+// chapter 09 = Prompt ___________________
 
 // Prompt code is like alert code but in prompt code we can take input from the user because prompt give a  message and input box in web page but alert only show a message
 
@@ -296,7 +296,11 @@ console.log(spec);
 
 // program 2
 
-prompt("7 + 3");
+var result1 = prompt("7 + 3");
+
+if (result1 == 10) {
+  alert("Correct!");
+}
 
 // program 3
 
@@ -304,4 +308,135 @@ var name6 = prompt("what is your name?");
 console.log(name6);
 // you can also use console to print the value given by user in prompt input
 
-// _____________________________________11-05-2025 ends____________________________________________
+// _____________________________________11-05-2025 ends______________________________________________
+
+// _____________________________________13-05-2025 starts____________________________________________
+
+
+// chapter 10 = if statements ___________________
+
+/* is ma hum if statements use karta hian jis ka structure kuch is tarah hota hai
+ if (condition) {
+ };
+*/
+
+// progrtam 1
+
+var x = prompt("Where does the Fahad live?");
+
+if (x === "karachi") {
+  alert("Correct!");
+};
+
+
+// chapter 11 = comparison operators (==), (===) ___________________
+
+/*
+
+There are 8 major comparison operators in JavaScript:
+1. == (equal to)      it only check the value like  ('abc' == 'abc') = true \ ( 2 == "2") = true \  it can not check the data type
+2. === (strict equal to)  it can check the value and data type like ('abc' === 'abc') = true \ (2 === "2") = false
+3. != (not equal to)  it only check the value like ('abc' != 'abc') = false \ (2 != "2") = false
+4. !== (strict not equal to)  it can check the value and data type like ('abc' !== 'abc') = false \ (2 !== "2") = true
+5. > (greater than)                        it can check the value like (2 > 1) = true \ (2 > 3) = false
+6. < (less than)                           it can check the value like (2 < 1) = false \ (2 < 3) = true
+7. >= (greater than or equal to)          it can check the value like (5 >= 5) = true \ (2 >= 3) = false
+8. <= (less than or equal to)             it can check the value like (5 <= 5) = true \ (2 <= 3) = true
+
+*/
+
+// program 1  is ma !== ya use hoa hai
+
+var yourTicketNumber = +prompt("Enter your ticket number");
+
+if (yourTicketNumber !== 20) {
+  alert("Better luck next time.");
+}
+else {
+  alert("Congratulations! You have won a prize.");
+};
+
+
+// program 2  is ma != ya use hoa hai
+
+var yourTicketNumber = prompt("Enter your ticket number");
+
+if (yourTicketNumber != 20) {
+  alert("Better luck next time.");
+}
+else {
+  alert("Congratulations! You have won a prize.");
+};
+
+// program 3  is ma == ya use hoa hai
+
+var yourTicketNumber = prompt("Enter your ticket number:");
+if (yourTicketNumber == 20) {
+  alert("Congratulations! You have won a prize.");
+} else {
+  alert("Better luck next time.");
+};
+
+// program 4  is ma === ya use hoa hai
+
+var yourTicketNumber = +prompt("Enter your ticket number:");
+if (yourTicketNumber === 20) {
+  alert("Congratulations! You have won a prize.");
+} else {
+  alert("Better luck next time.");
+};
+
+
+/*
+if (1 > 0)
+  if (0 < 1)
+    if (1 >= 0)
+
+      if (1 >= 1)
+        if (0 <= 1)
+          if (1 <= 1)
+*/
+
+
+// chapter 12 = if else and else if statements ___________________
+
+
+// program 1    even or odd 
+
+var num = +prompt("Enter a number: To check Even or Odd");
+
+if (num % 2 === 0) {
+  console.log("Even");
+}
+else {
+  console.log("Odd");
+};
+
+// program 2   prompt calculator
+
+var num11 = +prompt("Enter First number: for calculate");
+var num12 = +prompt("Enter Second number: for calculate");
+var num13 = prompt("Enter operator (+, -, *, /, %):");
+
+if (num13 == '+') {
+  console.log(num11 + num12);
+}
+else if (num13 == '-') {
+  console.log(num11 - num12);
+}
+else if (num13 == '*') {
+  console.log(num11 * num12);
+}
+else if (num13 == '/') {
+  console.log(num11 / num12);
+}
+else if (num13 == '%') {
+  console.log(num11 % num12);
+}
+else {
+  console.log("Your operator does not correct");
+}
+
+
+
+// _______________________________________13-05-2025 ends_____________________________________________
