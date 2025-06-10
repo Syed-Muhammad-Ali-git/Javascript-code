@@ -1129,6 +1129,75 @@ console.log(variable2);
 
 console.log(variable1.concat(variable2));
 
+// chapter 18 , 19
+
+// program 1
+
+var itemsarr1 = [
+  "cake",
+  "chips",
+  "snacks",
+  "chocolate",
+  "biscuits",
+  "biscuits",
+  "biscuits",
+];
+console.log(itemsarr1);
+
+for (var i = 0; i < itemsarr1.length; i++) {
+  console.log(i);
+  console.log(itemsarr1[i]);
+}
+
+// program 2
+
+var itemsarr2 = [
+  "cake",
+  "chips",
+  "snacks",
+  "chocolate",
+  "biscuits",
+  "biscuits",
+  "biscuits",
+];
+
+for (var i = 0; i < itemsarr2.length; i++) {
+  console.log(itemsarr2[i]);
+}
+
+// program 3
+
+for (var i = 0; i <= 12; i++) {
+  console.log(i);
+
+  if (i == 6) {
+    break;
+  }
+}
+
+// program 4
+
+var itemsarr3 = [
+  "cake",
+  "chips",
+  "snacks",
+  "chocolate",
+  "biscuits",
+  "biscuits",
+  "biscuits",
+];
+
+var userinput1 = prompt("what do you want to eat?");
+
+for (var i = 0; i < itemsarr3.length; i++) {
+  if (userinput1 == itemsarr3[i]) {
+    console.log("yes we have " + userinput1);
+    break;
+  } else if (i == itemsarr3.length - 1) {
+    console.log("sorry we dont have " + userinput1);
+  }
+}
+
 // _______________________________________22-05-2025 ends_____________________________________________
 
 // _______________________________________26-05-2025 starts___________________________________________
@@ -1935,4 +2004,210 @@ var zakatRate = 2.5 / 100;
 var zakatAmount = totalIncome * zakatRate;
 console.log("Zakat amount to be paid: " + zakatAmount + " Rs");
 
+// Chapter 21  changing case  ________________________________________________
+
+var str = "hello world";
+var upperStr = str.toUpperCase();
+var lowerStr = str.toLowerCase();
+console.log("Original String: " + str);
+console.log("Uppercase String: " + upperStr);
+console.log("Lowercase String: " + lowerStr);
+
+// Chapter 22  Measuring length and extracting parts  ________________________________________________
+
+// Measuring length and extracting parts of a string
+
+// 1. Measuring the length of a string
+var text = "Hello, World!";
+var lengthOfText = text.length;
+console.log("Length of the text:", lengthOfText); // Output: Length of the text: 13
+
+// 2. Extracting parts of the string using slice()
+var firstFiveChars = text.slice(0, 5);
+console.log("First 5 characters:", firstFiveChars); // Output: First 5 characters: Hello
+
+// 3. Extracting parts of the string using substring()
+var lastSixChars = text.substring(text.length - 6);
+console.log("Last 6 characters:", lastSixChars); // Output: Last 6 characters: World!
+
+// 4. Extracting a middle portion
+var middlePart = text.slice(7, 12);
+console.log("Middle part (7 to 12):", middlePart); // Output: Middle part (7 to 12): World
+
+// Chapter 23 Finding segments  ________________________________________________
+
+// Example 1: Using indexOf() to find the first occurrence of a segment
+var text = "Hello, hello, world!";
+var firstHello = text.indexOf("hello");
+console.log("First 'hello' starts at index:", firstHello); // Output: First 'hello' starts at index: 0 (case-sensitive)
+
+// Example 2: Using indexOf() with a starting position
+var secondHello = text.indexOf("hello", 5); // Start looking after index 4
+console.log("Second 'hello' starts at index:", secondHello); // Output: Second 'hello' starts at index: 7
+
+// Example 3: Using lastIndexOf() to find the last occurrence
+var lastHello = text.lastIndexOf("hello");
+console.log("Last 'hello' starts at index:", lastHello); // Output: Last 'hello' starts at index: 7
+
+// Example 4: Checking if a segment exists
+var hasWorld = text.indexOf("world") !== -1;
+console.log("Does 'world' exist?", hasWorld); // Output: Does 'world' exist? true
+
+// Chapter 24 Finding a character at a location ________________________________________________
+
+// Example 1: Using charAt() to find a character at a specific index
+var text = "Hello, World!";
+var charAtIndex3 = text.charAt(3);
+console.log("Character at index 3:", charAtIndex3); // Output: Character at index 3: l
+
+// Example 2: Using square bracket notation to find a character
+var charAtIndex5 = text[5];
+console.log("Character at index 5:", charAtIndex5); // Output: Character at index 5: ,
+
+// Example 3: Finding the first character
+var firstChar = text.charAt(0);
+console.log("First character:", firstChar); // Output: First character: H
+
+// Example 4: Finding the last character
+var lastChar = text.charAt(text.length - 1);
+console.log("Last character:", lastChar); // Output: Last character: !
+
+// Example 5: Handling out-of-bounds index
+var invalidChar = text.charAt(15); // Index beyond length (13)
+console.log("Character at index 15:", invalidChar); // Output: Character at index 15: "" (empty string)
+
+// Chapter 25 Replacing characters  ________________________________________________
+
+// Example 1: Using replace() to replace the first occurrence
+var text = "Hello, World!";
+var newText1 = text.replace("o", "0");
+console.log("Replace first 'o' with '0':", newText1); // Output: Replace first 'o' with '0': Hell0, World!
+
+// Example 2: Using replaceAll() for all occurrences
+var text4 = "Hello, hello, world!";
+var newText4 = text4.replaceAll("hello", "hi");
+console.log("Replace all 'hello' with 'hi':", newText4); // Output: Replace all 'hello' with 'hi': hi, hi, world!
+
+// chapter 26 Rounding Numbers________________________________________________
+
+// Rounding numbers to the nearest integer
+
+// program 1
+
+var num2 = 4.4;
+var roundedNum2 = Math.round(num2);
+console.log(num2); // 4.4
+console.log(roundedNum2); // 4
+
+// program 2
+
+var num3 = 4.5;
+var roundedNum3 = Math.round(num3);
+console.log(num3); // 4.5
+console.log(roundedNum3); // 5
+
+//program 3
+
+var num1 = 4.7;
+var roundedNum1 = Math.round(num1);
+console.log(num1); // 4.7
+console.log(roundedNum1); // 5
+
+// program 4
+
+var roundedNum4 = Math.round(6.5);
+console.log("Rounded number", roundedNum4);
+
+// Square roots
+
+var num5 = 16;
+var squareRoot1 = Math.sqrt(num5);
+console.log("Square root of", num5, "is", squareRoot1); // 4
+
+// valu minus ma bhi hogi to plus ma show karaga ( Math.abs() )
+
+console.log(Math.abs(-4)); // 4
+console.log(Math.abs(4)); // 4
+
+// ( Math.ceil() )  .ka baad jo bhi value ho wo direct +1 kar daga
+
+console.log(Math.ceil(4.1)); // 5
+console.log(Math.ceil(4.9)); // 5
+
+// Math.floor()  .ka baad jo bhi value ho ya wohi value show karaga jo point sa pahle ho
+// yaani ke point sa baad jo bhi value ho wo ignore kar dega
+
+console.log(Math.floor(4.1)); // 4
+console.log(Math.floor(4.9)); // 4
+
+// (Random numbers)  ya random number render karaga likin is ki default value 0 sa 1 ka darmian hoti hai
+
+var randomNum = Math.random();
+console.log("Random number between 0 and 1:", randomNum);
+
+// agar hama kisi array ma ya list ma max value yani sab sa bara number chahiye to hum Math.max() function ka istemal karte hain
+console.log(10, 20, 80, 40, 50);
+console.log("maximum value", Math.max(10, 20, 80, 40, 50));
+
+// or agar hama array ya list ma sb sa chota number chahiye to hum Math.min() function ka istemal karte hain
+
+console.log("minimum value", Math.min(10, 20, 80, 40, 50));
+
+// apna array banakar usa random number ma rakh kar chala sakta hain har baar refresh karna sa name change hoga
+
+var names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+var randomIndex = Math.floor(Math.random() * names.length);
+console.log("Random index:", names);
+console.log("Random name:", names[randomIndex]);
+
+// Chapter 27 Generating Numbers  ________________________________________________
+
+var randomNumber = Math.random();
+console.log(randomNumber);
+
+var improvedNum = randomNumber * 6;
+console.log(improvedNum);
+
+var numberOfStars = Math.ceil(improvedNum);
+console.log(numberOfStars);
+
+// Chapter 28 Converting strings to integers and decimals  _____________________________________
+
+var currentAge = prompt("Enter your age.");
+var qualifyingAge = parseInt(currentAge) + 1;
+
+console.log("Current age you enter is :", currentAge);
+console.log("Qualifying age is", qualifyingAge);
+
+// Chapter 29 Converting strings to numbers, numbers to strings  _______________________________________
+
+var numberAsNumber = 123;
+console.log(numberAsNumber, typeof numberAsNumber);
+var numberAsString = numberAsNumber.toString();
+console.log(numberAsString, typeof numberAsString);
+
+var integerString = "24";
+console.log(integerString, typeof integerString);
+var num = Number(integerString);
+console.log(num, typeof num);
+
+var numberAsNumber1 = 789;
+console.log(numberAsNumber1, typeof numberAsNumber1);
+var numberAsString1 = String(numberAsNumber1);
+console.log(numberAsString1, typeof numberAsString1);
+
+// Chapter 30 controlling the length of decimals  _____________________________________
+
+var number1 = 3.14159;
+console.log(number1, typeof number1);
+var fixedNumber1 = number1.toFixed(2);
+console.log("Number with 2 decimal places:", fixedNumber1);
+console.log("Type of fixedNumber1:", typeof fixedNumber1);
+
 // _______________________________________09-06-2025 ends_____________________________________________
+
+// _______________________________________10-06-2025 starts __________________________________________
+
+
+
+// _______________________________________10-06-2025 ends ____________________________________________
