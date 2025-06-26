@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+    max-width: 1920px;
+    text-align: justify;
+    background-color: color-mix(in hsl shorter hue, blue 50%, green 50%);
+    text-decoration: none;
+}
+
+body {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+h1:hover {
+    color: yellow;
+}
+
+a {
+    color: darkred !important;
+}
