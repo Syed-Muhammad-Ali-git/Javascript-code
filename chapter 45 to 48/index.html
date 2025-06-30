@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chapter - 45 to 48</title>
+  </head>
+
+  <body>
+    <a href="../index.html"> <button>Retuen to Home Page</button></a>
+
+    <h1>Welcome to chapter-45 to 48</h1>
+
+    <p>This is the New chapter of the JavaScript Book Practice.</p>
+
+    <h2>chapter 45: Events: links</h2>
+
+    <a href="#" onclick="alert('Hi');">Click to show alert</a>
+    <br />
+    <a href="JavaScript:void(0)" onClick="alert('Hi');">Click</a>
+    <!-- javascript:void sa link ka color visit karna ka baad bhi change nhi hota -->
+    <br />
+    <a href="JavaScript:void(0)" onClick="var greet='hi'; alert(greet);"
+      >Click</a
+    >
+    <br />
+    <a href="JavaScript:void(0)" onClick="popup('Hi');">Click</a>
+
+    <h2>chapter 46: Events: buttons</h2>
+
+    <input
+      type="button"
+      value="Click"
+      onClick="alert('Hello world!');"
+      placeholder="hello"
+    />
+
+    <div>
+      <div>
+        <h1 id="h1"></h1>
+      </div>
+      <h1 id="h11">Bulb is off</h1>
+      <br />
+      <img src="./images/bulb-off.jfif" alt="bulb is off" id="bulb" />
+      <br />
+      <button id="btn" onclick="onClick()">Bulb On</button>
+    </div>
+
+    <h2>chapter 47: Events: mouse</h2>
+
+    <img
+      src="./images/bulb-on.jfif"
+      onmouseover="mouseAlert('Mouse is over the image');"
+      onmouseout="mouseAlertOut('Mouse is out of the image');"
+      alt="bulb is on"
+    />
+
+    <img
+      src="./images/bulb-off.jfif"
+      onmouseover="src='./images/bulb-on.jfif'"
+      onmouseout="src='./images/bulb-off.jfif'"
+      alt="bulb image"
+    />
+
+    <a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+
+    <h2>chapter 48: Events: fields</h2>
+
+    Email:<br />
+    <input
+      type="text"
+      size="30"
+      onFocus="this.style.backgroundColor='yellow';"
+    />
+
+    <br />
+    Email:
+    <br />
+    <input
+      type="text"
+      size="30"
+      onFocus="this.style.backgroundColor='yellow';"
+      onBlur="this.style.backgroundColor='white';"
+    />
+
+    <script src="./chapter-45-to-48.js"></script>
+  </body>
+</html>
