@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chapter - 58 to 68</title>
+  </head>
+
+  <body>
+    <a href="../index.html"> <button>Return to Home Page</button></a>
+
+    <h1>Welcome to chapter 58 to 68</h1>
+
+    <p>This is the New chapter of the JavaScript Book Practice.</p>
+
+    <!-- chapter 58 -->
+    <h1>Chapter 58: The DOM</h1>
+    <p>This is the DOM tree,</p>
+    <img src="./dom-tree.png" alt="dom tree image" width="320" />
+
+    <!-- chapter 59 -->
+    <h1>Chapter 59: The DOM: Parents & children</h1>
+    <p>
+      html parent hai head ka or body ka <br />
+      head ka children hai meta or title <br />
+      isi tarah body kabhi childrens hain h1, p, div, section etc <br />
+      yahi sab chizain mil kar DOM tree banata hain
+    </p>
+
+    <!-- chapter 60 -->
+    <h1>Chapter 60: The DOM: Finding children</h1>
+    <p>
+      document.getElementById("email"); <br />
+      p[2].innerHTML; <br />
+      document.getElementsByTagName("p"); ka zaria <br />
+      hum children or parents ko access karta hain
+    </p>
+
+    <!-- chapter 61 -->
+    <h1>Chapter 61: The DOM: Junk artifacts & node type</h1>
+    <p>
+      DOM (Document Object Model) is a tree-like structure of your HTML page
+      that JavaScript can read and manipulate. Each element, text, space, and
+      even comments become a node in the DOM tree.
+    </p>
+    <p>
+      div <br />
+      p Hello p <br />
+      p World p <br />
+      div
+    </p>
+    <p>in doom looks like this</p>
+    <p>
+      div <br />
+      ├── #text (junk space) <br />
+      ├── p <br />
+      │ └── #text "Hello" <br />
+      ├── #text (junk space) <br />
+      ├── p <br />
+      │ └── #text "World" <br />
+      ├── #text (junk space) <br />
+      div
+    </p>
+
+    <!-- chapter 62 -->
+    <h1>Chapter 62: The DOM: More ways to target elements</h1>
+    <p>parentNode.childNodes[0];</p>
+    <p>parentNode.firstChild;</p>
+    <p>parentNode.lastChild;</p>
+    <p>
+      var firstEl = document.getElementById("div1"); <br />
+      var nonexistentEl = firstEl.previousSibling;
+    </p>
+    <p>
+      var firstEl = document.getElementById("div1"); <br />
+      var nonexistentEl = firstEl.nextSibling;
+    </p>
+
+    <!-- chapter 63 -->
+    <h1>Chapter 63: The DOM: Getting a target's name</h1>
+    <p>
+      This is the target name of dom using childnodes <br />
+      p <br />
+      div <br />
+      span <br />img <br />a <br />
+      em <br />table <br />li
+    </p>
+
+    <!-- chapter 64 -->
+    <h1>Chapter 64: The DOM: Counting elements</h1>
+    <p>liElements.length;</p>
+    <p>nodeList.length;</p>
+
+    <!-- chapter 65 -->
+    <h1>Chapter 65: The DOM: Attributes</h1>
+    <p>
+      There are some attributes of DOM <br />
+      getAttribute (for getting attribute)<br />
+      setAttribute (for setting attribute) <br />
+      removeAttribute (for removing attribute) <br />
+      hasAttribute (for checking attribute)
+    </p>
+
+    <!-- chapter 66 -->
+    <h1>Chapter 66: The DOM: Attributes names and values</h1>
+    <p>
+      attribute name means there are two type of information <br />
+      for attributes in js <br />
+      key, value pair
+    </p>
+
+    <!-- chapter 67 -->
+    <h1>Chapter 67: The DOM: Adding nodes</h1>
+    <p>document.createElement("p");</p>
+    <p>document.createTextNode("Hello!");</p>
+    <p>nodeToAdd.appendChild(newTxt);</p>
+
+    <!-- chapter 68 -->
+    <h1>Chapter 68: The DOM: Inserting nodes</h1>
+    <p>parentDiv.appendChild(newParagraph);</p>
+    <p>parentDiv.insertBefore(newParagraph, paragraph1);</p>
+    <p>parentDiv.insertBefore(newE, target.nextSibling);</p>
+    <p>To remove a node, use removeChild</p>
+
+    <script src="./chapter-58-to-68.js"></script>
+  </body>
+</html>
